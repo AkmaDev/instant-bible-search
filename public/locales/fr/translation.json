@@ -1,0 +1,30 @@
+{
+    "title": "Recherche Biblique Instantanée",
+    "description": "Parlez ou tapez une phrase pour trouver instantanément des versets bibliques.",
+    "speak_phrase": "Dites une phrase biblique",
+    "get_verses": "Obtenir des versets ",
+    "you_said": "Vous avez dit",
+    "manual_input_placeholder": "Ex : Dieu est amour, Je suis le chemin, etc.",
+    "speech_not_supported": "🎤 Votre navigateur ne supporte pas la recherche vocale. Vous pouvez quand même écrire ci-dessous.",
+    "or_type": "Ou tapez votre phrase :",
+    "searching": "Recherche dans la Bible...",
+    "results": "Résultats",
+    "copy_share": "Copier & Partager",
+    "no_results_found": "Aucun résultat trouvé.",
+    "faq_title": "Foire Aux Questions",
+    "faq": {
+      "q1": "Comment fonctionne la Recherche Biblique Instantanée ?",
+      "a1": "Notre outil utilise une technologie d'IA avancée pour analyser votre saisie vocale ou écrite, comprendre sa signification, et l'associer instantanément à des versets bibliques pertinents.",
+      "q2": "Dois-je créer un compte ?",
+      "a2": "Non, l'application est totalement gratuite et ne nécessite aucun compte ou connexion.",
+      "q3": "Quelles versions de la Bible sont prises en charge ?",
+      "a3": "L'application utilise actuellement des versions du domaine public et des traductions prises en charge par notre modèle IA, comme la King James Version (KJV), la World English Bible (WEB), etc.",
+      "q4": "Puis-je utiliser cet outil hors ligne ?",
+      "a4": "Pas encore. La reconnaissance vocale et le traitement par IA nécessitent une connexion Internet.",
+      "q5": "Est-ce disponible dans d'autres langues ?",
+      "a5": "L’anglais est pris en charge par défaut, mais d'autres langues (français, espagnol, fongbé, etc.) arrivent bientôt !",
+      "q6": "Puis-je partager les résultats ?",
+      "a6": "Oui ! Vous pouvez copier et partager les versets bibliques avec vos proches par réseaux sociaux, email ou messagerie."
+    }
+  }
+  

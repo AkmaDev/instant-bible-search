@@ -1,0 +1,30 @@
+{
+    "title": "Instant Bible Search",
+    "description": "Speak or type a phrase to find Bible verses instantly.",
+    "speak_phrase": "Speak a Bible phrase",
+    "get_verses": "Get Bible Verses ",
+    "you_said": "You said",
+    "manual_input_placeholder": "Ex: God is love, I am the way, etc.",
+    "speech_not_supported": "🎤 Your browser doesn't support voice search. You can still type below.",
+    "or_type": "Or type your phrase:",
+    "searching": "Searching the Bible...",
+    "results": "Results",
+    "copy_share": "Copy & Share",
+    "no_results_found": "No results found.",
+    "faq_title": "Frequently Asked Questions",
+    "faq": {
+      "q1": "How does Instant Bible Search work?",
+      "a1": "Our tool uses advanced AI technology to analyze your spoken or written input, understand its meaning, and instantly match it to relevant Bible verses from multiple translations.",
+      "q2": "Do I need to create an account?",
+      "a2": "No, Instant Bible Search is completely free and does not require any account or login. Just speak or type, and you’ll get results immediately.",
+      "q3": "Which Bible versions are supported?",
+      "a3": "The app currently uses a combination of public domain versions and translations supported by our AI model, including the King James Version (KJV), World English Bible (WEB), and others.",
+      "q4": "Can I use this tool offline?",
+      "a4": "Not yet. Voice recognition and AI processing require an internet connection, but we are working on a future version that will support offline access and local languages.",
+      "q5": "Is this available in other languages?",
+      "a5": "English is supported by default, but support for other languages (French, Spanish, Fongbé, etc.) is coming soon!",
+      "q6": "Can I share the results?",
+      "a6": "Yes! You can copy and share the Bible verses you find with others on social media, email, or messaging apps."
+    }
+  }
+  
