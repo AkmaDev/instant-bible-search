@@ -37,6 +37,11 @@ export async function POST(req: NextRequest) {
 
     console.log("Prompt sent to OpenRouter:", prompt);
 
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 10000); // 10s timeout
+
+    // console.log(process.env.OPENROUTER_API_KEY) //ajouté
+
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
@@ -48,7 +53,18 @@ export async function POST(req: NextRequest) {
         messages: [{ role: "user", content: prompt }],
         max_tokens: 500,
       }),
+      signal: controller.signal, //ajouté
     });
+//
+    clearTimeout(timeout); //ajouté
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error("Erreur OpenRouter:", errorText);
+      return NextResponse.json({ result: `Erreur API: ${errorText}` }, { status: 500 });
+    }
+    //
+
 
     const data = await response.json();
 

@@ -7,7 +7,9 @@ import SpeechRecognition, {
 import Head from "next/head";
 import i18next from "i18next";
 import { useT } from "../i18n/client";
+// import { useTranslation } from "react-i18next";
 import { useParams, useRouter } from "next/navigation";
+// import { initI18n } from "../i18n/client";
 
 interface Verse {
   text: string;
@@ -23,6 +25,8 @@ export default function InstantBibleSearch() {
   const [manualText, setManualText] = useState("");
   const { transcript, listening, resetTranscript } = useSpeechRecognition();
   const [speechAvailable, setSpeechAvailable] = useState(true);
+  // const [mounted, setMounted] = useState(false);
+  // const [ready, setReady] = useState(false);
 
   const params = useParams();
   const langParam = params?.lang ?? "en"; // valeur par défaut
@@ -112,6 +116,13 @@ export default function InstantBibleSearch() {
     const isSupported = SpeechRecognition.browserSupportsSpeechRecognition();
     setSpeechAvailable(isSupported);
   }, []);
+
+  // useEffect(() => {
+  //   setMounted(true);
+  //   initI18n().then(() => setReady(true));
+  // }, []);
+
+  // if (!mounted || !ready) return null;
 
   return (
     <>
